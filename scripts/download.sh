@@ -16,3 +16,32 @@
 #   CCAGGATTTACAGACTTTAAA
 #
 #   If $4 == "another" only the **first two sequence** should be output
+
+#--------------------------------------------------------------------------------------------------
+
+#$1 = text file with urls
+#$2 = data directory
+#$3 = "yes" or "no"
+
+		
+echo "Download the sequencing data files and place them..."
+	
+	wget -i $1 -P $2
+	echo
+	
+	
+echo "Uncompress the downloaded file..."
+	
+	if ["$3" == "yes"]
+	then
+		gunzip -k data/*fastq.gz
+	fi
+	echo
+	
+
+	
+	
+	
+	
+	
+	
