@@ -19,9 +19,9 @@
 
 #--------------------------------------------------------------------------------------------------
 
-#$1 = text file with urls
-#$2 = data directory
-#$3 = "yes" or "no"
+# $1 = text file with urls (data/urls.txt) or url
+# $2 = output directory --> data or res
+# $3 = "yes" or "no"
 
 		
 echo "Download the sequencing data files and place them..."
