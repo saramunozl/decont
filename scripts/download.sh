@@ -19,7 +19,7 @@
 
 #--------------------------------------------------------------------------------------------------
 
-# $1 = text file with urls (data/urls.txt) or url
+# $1 = text file with urls (data/urls.txt or data/url
 # $2 = output directory --> data or res
 # $3 = "yes" or "no"
 
@@ -32,9 +32,9 @@ echo "Download the sequencing data files and place them..."
 	
 echo "Uncompress the downloaded file..."
 	
-	if ["$3" == "yes"]
+	if [ $3 == "yes" ]
 	then
-		gunzip -k data/*fastq.gz
+		gunzip -k $2/*fasta.gz
 	fi
 	echo
 	

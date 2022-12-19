@@ -13,7 +13,7 @@
 	echo "Running STAR index..."
 
 		
-	mkdir -p res/$2
+	mkdir -p res/contaminants_idx
 	
 	STAR \
 	--runThreadN 8 \
