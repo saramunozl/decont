@@ -1,5 +1,3 @@
-#Download all the files specified in data/filenames
-
 for url in data/urls.txt
 do
     bash scripts/download.sh $url data
@@ -13,3 +11,8 @@ for url in data/contaminants.urls.txt
 do
     bash scripts/download.sh $url res yes
 done
+
+
+# Index the contaminants file
+
+bash scripts/index.sh res/contaminants.fasta res/contaminants_idx

@@ -19,7 +19,7 @@
 	--runThreadN 8 \
 	--runMode genomeGenerate \
 	--genomeDir $2 \
- 	--genomeFastaFiles out/merged/$1 \
+ 	--genomeFastaFiles $1 \
  	--genomeSAindexNbases 9
  	
  	echo
