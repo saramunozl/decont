@@ -23,25 +23,28 @@
 # $2 = output directory --> data or res
 # $3 = "yes" or "no"
 
-		
-echo "Download the sequencing data files and place them..."
-	
+echo "----------------------------------------------------------------------------------------------"		
+echo "Downloading the sequencing data files..."
+    
 	wget -i $1 -P $2
-	echo
-	
-	
-echo "Uncompress the downloaded file..."
-	
+
+echo "Done..."
+
+
+echo "Uncompressing the downloaded file..."
+    
 	if [ $3 == "yes" ]
 	then
 		gunzip -k $2/*fasta.gz
 	fi
-	echo
-	
 
-	
-	
-	
-	
+echo "Done..."
+
+
+echo "Filtering the file..."
+
+	if [ $4 ==  ]
+
+echo "Done..."
 	
 	

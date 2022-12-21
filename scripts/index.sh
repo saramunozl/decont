@@ -9,17 +9,16 @@
 # $1 = sample id --> contaminants.fasta.gz
 # $2 = output directory --> res/contaminants_idx
 
+echo "----------------------------------------------------------------------------------------------"
+echo "Running STAR index..."
 
-	echo "Running STAR index..."
-
-		
 	mkdir -p res/contaminants_idx
 	
 	STAR \
 	--runThreadN 8 \
 	--runMode genomeGenerate \
 	--genomeDir $2 \
- 	--genomeFastaFiles $1 \
- 	--genomeSAindexNbases 9
+	--genomeFastaFiles $1 \
+	--genomeSAindexNbases 9
  	
- 	echo
+echo "Done..."
