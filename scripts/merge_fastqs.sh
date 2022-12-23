@@ -19,7 +19,7 @@ echo "Merging the files from same samples..."
 
 	cat $1/${sid}-12.5dpp.1.1s_sRNA.fastq.gz $1/${sid}-12.5dpp.1.2s_sRNA.fastq.gz \
 	> $2/${sid}.merged.fastq.gz
-	
+
 echo "Done..."
 
 

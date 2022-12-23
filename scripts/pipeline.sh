@@ -7,8 +7,7 @@ done
 
 #---------------------------------------------------------------------------------------------------
 
-# Download the contaminants fasta file, uncompress it, and
-# filter to remove all small nuclear RNAs
+# Download the contaminants fasta file and uncompress it
 
 for url in data/contaminants.urls.txt
 do
@@ -107,7 +106,13 @@ for fname in log/cutadapt/*.log
     
 echo "Done..."
 
+#---------------------------------------------------------------------------------------------------
 
+# Export a file with my conda environment information
 
+echo "----------------------------------------------------------------------------------------------"
+echo "Export conda environment information"
 
+conda env export --from-history > conda.environment
 
+echo "Done..."

@@ -4,7 +4,7 @@
 # The STAR command is provided for you. You should replace the parts surrounded
 # by "<>" and uncomment it.
 
-#-----------------------------------------------------------------------------------------------------------
+#---------------------------------------------------------------------------------------------------
 
 # $1 = sample id --> contaminants.fasta.gz
 # $2 = output directory --> res/contaminants_idx

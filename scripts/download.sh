@@ -30,7 +30,7 @@ echo "Downloading the sequencing data files..."
 
 echo "Done..."
 
-
+echo "----------------------------------------------------------------------------------------------"
 echo "Uncompressing the downloaded file..."
     
 	if [ $3 == "yes" ]
@@ -41,10 +41,3 @@ echo "Uncompressing the downloaded file..."
 echo "Done..."
 
 
-echo "Filtering the file..."
-
-	if [ $4 ==  ]
-
-echo "Done..."
-	
-	

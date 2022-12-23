@@ -1,0 +1,9 @@
+name: entregable
+channels:
+  - defaults
+  - conda-forge
+  - bioconda
+dependencies:
+  - star
+  - cutadapt
+prefix: /home/vant/mambaforge/envs/entregable
